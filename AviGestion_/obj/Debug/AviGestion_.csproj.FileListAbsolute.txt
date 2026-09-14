@@ -1,0 +1,17 @@
+D:\proyecto\AviGestion-main\AviGestion_\bin\Debug\AviGestion_.exe.config
+D:\proyecto\AviGestion-main\AviGestion_\bin\Debug\AviGestion_.exe
+D:\proyecto\AviGestion-main\AviGestion_\bin\Debug\AviGestion_.pdb
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.csproj.AssemblyReference.cache
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.Form1.resources
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.Interfaz.FormClientes.resources
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.Interfaz.FormHistorialCliente.resources
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.Properties.Resources.resources
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.UI.FormMenu.resources
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.UI.FormProducto.resources
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.UI.FormUsuarios.resources
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.csproj.GenerateResource.cache
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.csproj.CoreCompileInputs.cache
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.exe
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.pdb
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.exe.config
+D:\proyecto\AviGestion-main\AviGestion_\obj\Debug\AviGestion_.UI.FormCargaStock.resources
