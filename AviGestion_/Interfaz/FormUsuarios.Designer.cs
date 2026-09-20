@@ -26,6 +26,7 @@
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAccion = new System.Windows.Forms.DataGridViewButtonColumn();
             this.colEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pnlModificar = new System.Windows.Forms.Panel();
@@ -38,6 +39,8 @@
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.lblRol = new System.Windows.Forms.Label();
             this.cmbRol = new System.Windows.Forms.ComboBox();
+            this.lblMail = new System.Windows.Forms.Label();
+            this.txtMail = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
@@ -107,6 +110,7 @@
             this.colNombre,
             this.colApellido,
             this.colRol,
+            this.colMail,
             this.colAccion,
             this.colEliminar});
             this.dgvUsuarios.Location = new System.Drawing.Point(20, 110);
@@ -122,21 +126,28 @@
             this.colNombre.HeaderText = "Nombre";
             this.colNombre.Name = "colNombre";
             this.colNombre.ReadOnly = true;
-            this.colNombre.Width = 200;
+            this.colNombre.Width = 150;
             // 
             // colApellido
             // 
             this.colApellido.HeaderText = "Apellido";
             this.colApellido.Name = "colApellido";
             this.colApellido.ReadOnly = true;
-            this.colApellido.Width = 200;
+            this.colApellido.Width = 150;
             // 
             // colRol
             // 
             this.colRol.HeaderText = "Rol";
             this.colRol.Name = "colRol";
             this.colRol.ReadOnly = true;
-            this.colRol.Width = 200;
+            this.colRol.Width = 150;
+            // 
+            // colMail
+            // 
+            this.colMail.HeaderText = "Mail";
+            this.colMail.Name = "colMail";
+            this.colMail.ReadOnly = true;
+            this.colMail.Width = 180;
             // 
             // colAccion
             // 
@@ -145,7 +156,7 @@
             this.colAccion.ReadOnly = true;
             this.colAccion.Text = "Modificar";
             this.colAccion.UseColumnTextForButtonValue = true;
-            this.colAccion.Width = 120;
+            this.colAccion.Width = 100;
             // 
             // colEliminar
             // 
@@ -154,7 +165,7 @@
             this.colEliminar.ReadOnly = true;
             this.colEliminar.Text = "Eliminar";
             this.colEliminar.UseColumnTextForButtonValue = true;
-            this.colEliminar.Width = 120;
+            this.colEliminar.Width = 100;
             // 
             // pnlModificar
             // 
@@ -169,6 +180,8 @@
             this.pnlModificar.Controls.Add(this.txtContrasena);
             this.pnlModificar.Controls.Add(this.lblRol);
             this.pnlModificar.Controls.Add(this.cmbRol);
+            this.pnlModificar.Controls.Add(this.lblMail);
+            this.pnlModificar.Controls.Add(this.txtMail);
             this.pnlModificar.Controls.Add(this.btnCancelar);
             this.pnlModificar.Controls.Add(this.btnGuardar);
             this.pnlModificar.Location = new System.Drawing.Point(20, 305);
@@ -262,6 +275,23 @@
             this.cmbRol.TabIndex = 8;
             this.cmbRol.SelectedIndexChanged += new System.EventHandler(this.cmbRol_SelectedIndexChanged);
             // 
+            // lblMail
+            // 
+            this.lblMail.AutoSize = true;
+            this.lblMail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(125)))), ((int)(((byte)(50)))));
+            this.lblMail.Location = new System.Drawing.Point(505, 105);
+            this.lblMail.Name = "lblMail";
+            this.lblMail.Size = new System.Drawing.Size(33, 13);
+            this.lblMail.TabIndex = 11;
+            this.lblMail.Text = "MAIL";
+            // 
+            // txtMail
+            // 
+            this.txtMail.Location = new System.Drawing.Point(505, 123);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(160, 20);
+            this.txtMail.TabIndex = 12;
+            // 
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(620, 145);
@@ -320,6 +350,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colApellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMail;
         private System.Windows.Forms.DataGridViewButtonColumn colAccion;
         private System.Windows.Forms.DataGridViewButtonColumn colEliminar;
         private System.Windows.Forms.Panel pnlModificar;
@@ -332,6 +363,8 @@
         private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.ComboBox cmbRol;
+        private System.Windows.Forms.Label lblMail;
+        private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
     }

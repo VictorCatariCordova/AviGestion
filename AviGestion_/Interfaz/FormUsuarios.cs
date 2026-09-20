@@ -31,6 +31,7 @@ namespace AviGestion_.UI
                 txtApellido.Text = usuario.Apellido;
                 txtContrasena.Text = usuario.Contrasena;
                 cmbRol.Text = usuario.Rol;
+                txtMail.Text = usuario.Mail;
             }
             else if (nombreColumna == "colEliminar")
             {
@@ -60,6 +61,7 @@ namespace AviGestion_.UI
             colNombre.DataPropertyName = "Nombre";
             colApellido.DataPropertyName = "Apellido";
             colRol.DataPropertyName = "Rol";
+            colMail.DataPropertyName = "Mail";
 
             dgvUsuarios.AutoGenerateColumns = false;
             dgvUsuarios.DataSource = usuarioLogica.ObtenerTodos();
@@ -71,10 +73,11 @@ namespace AviGestion_.UI
             txtNombre.Clear();
             txtApellido.Clear();
             txtContrasena.Clear();
+            txtMail.Clear();
             cmbRol.SelectedIndex = -1;
             txtNombre.Focus();
-        
-    }
+
+        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -92,7 +95,8 @@ namespace AviGestion_.UI
                 Nombre = txtNombre.Text,
                 Apellido = txtApellido.Text,
                 Contrasena = txtContrasena.Text,
-                Rol = cmbRol.Text
+                Rol = cmbRol.Text,
+                Mail = txtMail.Text
             };
 
             if (idUsuarioEditando.HasValue)

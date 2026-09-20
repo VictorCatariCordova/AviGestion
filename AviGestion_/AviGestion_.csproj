@@ -70,6 +70,12 @@
     <Compile Include="Interfaz\FormHistorialCliente.Designer.cs">
       <DependentUpon>FormHistorialCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\FormRecuperoContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FormRecuperoContrasena.Designer.cs">
+      <DependentUpon>FormRecuperoContrasena.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logica\ABM_Producto.cs" />
     <Compile Include="Logica\Alerta.cs" />
     <Compile Include="Logica\Cliente.cs" />
