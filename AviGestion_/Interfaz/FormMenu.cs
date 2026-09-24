@@ -46,18 +46,22 @@ namespace AviGestion_.UI
             btnCategorias.Visible = false;
             btnVehiculos.Visible = false;
             btnAyuda.Visible = true;
-            lblProductosDescripcion.Visible = false; 
-            lblStockDescripcion.Visible=false;
-            
-            
+            btnBitacora.Visible = false;
+            btnBackup.Visible = false;
+            lblProductosDescripcion.Visible = false;
+            lblStockDescripcion.Visible = false;
+
+
 
             switch (usuarioActual.Rol)
             {
                 case "Administrador":
                     btnClientes.Visible = true;
                     btnUsuarios.Visible = true;
-                    btnStock.Visible=false;
-                    btnProductos.Visible=false;  
+                    btnStock.Visible = false;
+                    btnProductos.Visible = false;
+                    btnBitacora.Visible = true;
+                    btnBackup.Visible = true;
                     break;
 
                 case "Administrador de pedidos":
@@ -70,8 +74,8 @@ namespace AviGestion_.UI
                     btnVehiculos.Visible = true;
                     btnStock.Visible = true;
                     btnCategorias.Visible = true;
-                    lblProductosDescripcion.Visible=true;
-                    lblStockDescripcion.Visible= true;  
+                    lblProductosDescripcion.Visible = true;
+                    lblStockDescripcion.Visible = true;
                     break;
             }
         }
@@ -89,7 +93,7 @@ namespace AviGestion_.UI
 
         private void btnProductos_Paint(object sender, PaintEventArgs e)
         {
-        }   
+        }
 
         private void lblProductosTitulo_Click(object sender, EventArgs e)
         {
@@ -102,7 +106,7 @@ namespace AviGestion_.UI
             this.Hide();
         }
 
-        
+
 
 
         private void FormMenu_Load(object sender, EventArgs e)
@@ -122,6 +126,33 @@ namespace AviGestion_.UI
             FormCargaStock frm = new FormCargaStock(usuarioActual);
             frm.Show();
             this.Hide();
+        }
+
+        private void btnBitacora_Click(object sender, EventArgs e)
+        {
+            FormBitacora frm = new FormBitacora(usuarioActual);
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnBackup_Click(object sender, EventArgs e)
+        {
+            FormBackup frm = new FormBackup(usuarioActual);
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            var confirmacion = MessageBox.Show("¿Desea cerrar la sesión actual?", "Cerrar sesión",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirmacion != DialogResult.Yes) return;
+
+            BitacoraLogica.Registrar(usuarioActual.Nombre, "Cierre de Sesión", "Seguridad");
+
+            AviGestion_.Form1 login = new AviGestion_.Form1();
+            login.Show();
+            this.Close();
         }
     }
 

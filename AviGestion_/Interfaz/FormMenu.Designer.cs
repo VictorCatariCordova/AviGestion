@@ -1,18 +1,10 @@
 ﻿
-
 namespace AviGestion_.UI
 {
     partial class FormMenu
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,14 +16,11 @@ namespace AviGestion_.UI
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Panel();
             this.lblClientesDescripcion = new System.Windows.Forms.Label();
             this.lblClientesTitulo = new System.Windows.Forms.Label();
@@ -57,6 +46,12 @@ namespace AviGestion_.UI
             this.lblStockDescripcion = new System.Windows.Forms.Label();
             this.btnProductos = new System.Windows.Forms.Button();
             this.lblProductosDescripcion = new System.Windows.Forms.Label();
+            this.btnBitacora = new System.Windows.Forms.Panel();
+            this.lblBitacoraDescripcion = new System.Windows.Forms.Label();
+            this.lblBitacoraTitulo = new System.Windows.Forms.Label();
+            this.btnBackup = new System.Windows.Forms.Panel();
+            this.lblBackupDescripcion = new System.Windows.Forms.Label();
+            this.lblBackupTitulo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.btnClientes.SuspendLayout();
             this.btnUsuarios.SuspendLayout();
@@ -65,6 +60,8 @@ namespace AviGestion_.UI
             this.btnCategorias.SuspendLayout();
             this.btnVehiculos.SuspendLayout();
             this.btnAyuda.SuspendLayout();
+            this.btnBitacora.SuspendLayout();
+            this.btnBackup.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -79,14 +76,31 @@ namespace AviGestion_.UI
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.OliveDrab;
+            this.panel1.Controls.Add(this.btnCerrarSesion);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(858, 35);
             this.panel1.TabIndex = 5;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.OliveDrab;
+            this.btnCerrarSesion.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(708, 4);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(140, 27);
+            this.btnCerrarSesion.TabIndex = 20;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // btnClientes
             // 
@@ -352,12 +366,76 @@ namespace AviGestion_.UI
             this.lblProductosDescripcion.Text = "Control y mantenimiento detallado del catálogo de productos.";
             this.lblProductosDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnBitacora
+            // 
+            this.btnBitacora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnBitacora.Controls.Add(this.lblBitacoraDescripcion);
+            this.btnBitacora.Controls.Add(this.lblBitacoraTitulo);
+            this.btnBitacora.Location = new System.Drawing.Point(20, 560);
+            this.btnBitacora.Name = "btnBitacora";
+            this.btnBitacora.Size = new System.Drawing.Size(260, 150);
+            this.btnBitacora.TabIndex = 18;
+            this.btnBitacora.Click += new System.EventHandler(this.btnBitacora_Click);
+            // 
+            // lblBitacoraDescripcion
+            // 
+            this.lblBitacoraDescripcion.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBitacoraDescripcion.Location = new System.Drawing.Point(10, 85);
+            this.lblBitacoraDescripcion.Name = "lblBitacoraDescripcion";
+            this.lblBitacoraDescripcion.Size = new System.Drawing.Size(240, 51);
+            this.lblBitacoraDescripcion.TabIndex = 1;
+            this.lblBitacoraDescripcion.Text = "Consulta y filtrado del registro de auditoría del sistema.";
+            this.lblBitacoraDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBitacoraTitulo
+            // 
+            this.lblBitacoraTitulo.AutoSize = true;
+            this.lblBitacoraTitulo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBitacoraTitulo.Location = new System.Drawing.Point(78, 55);
+            this.lblBitacoraTitulo.Name = "lblBitacoraTitulo";
+            this.lblBitacoraTitulo.Size = new System.Drawing.Size(92, 19);
+            this.lblBitacoraTitulo.TabIndex = 0;
+            this.lblBitacoraTitulo.Text = "Bitácora";
+            // 
+            // btnBackup
+            // 
+            this.btnBackup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnBackup.Controls.Add(this.lblBackupDescripcion);
+            this.btnBackup.Controls.Add(this.lblBackupTitulo);
+            this.btnBackup.Location = new System.Drawing.Point(300, 560);
+            this.btnBackup.Name = "btnBackup";
+            this.btnBackup.Size = new System.Drawing.Size(260, 150);
+            this.btnBackup.TabIndex = 19;
+            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
+            // 
+            // lblBackupDescripcion
+            // 
+            this.lblBackupDescripcion.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBackupDescripcion.Location = new System.Drawing.Point(10, 85);
+            this.lblBackupDescripcion.Name = "lblBackupDescripcion";
+            this.lblBackupDescripcion.Size = new System.Drawing.Size(240, 51);
+            this.lblBackupDescripcion.TabIndex = 1;
+            this.lblBackupDescripcion.Text = "Generación de copias de seguridad de la base de datos.";
+            this.lblBackupDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblBackupTitulo
+            // 
+            this.lblBackupTitulo.AutoSize = true;
+            this.lblBackupTitulo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBackupTitulo.Location = new System.Drawing.Point(95, 55);
+            this.lblBackupTitulo.Name = "lblBackupTitulo";
+            this.lblBackupTitulo.Size = new System.Drawing.Size(67, 19);
+            this.lblBackupTitulo.TabIndex = 0;
+            this.lblBackupTitulo.Text = "Backup";
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
-            this.ClientSize = new System.Drawing.Size(860, 570);
+            this.ClientSize = new System.Drawing.Size(860, 740);
+            this.Controls.Add(this.btnBackup);
+            this.Controls.Add(this.btnBitacora);
             this.Controls.Add(this.lblProductosDescripcion);
             this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.lblStockDescripcion);
@@ -389,6 +467,10 @@ namespace AviGestion_.UI
             this.btnVehiculos.PerformLayout();
             this.btnAyuda.ResumeLayout(false);
             this.btnAyuda.PerformLayout();
+            this.btnBitacora.ResumeLayout(false);
+            this.btnBitacora.PerformLayout();
+            this.btnBackup.ResumeLayout(false);
+            this.btnBackup.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,6 +480,7 @@ namespace AviGestion_.UI
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnCerrarSesion;
 
         private System.Windows.Forms.Panel btnClientes;
         private System.Windows.Forms.Label lblClientesTitulo;
@@ -430,6 +513,11 @@ namespace AviGestion_.UI
         private System.Windows.Forms.Label lblStockDescripcion;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Label lblProductosDescripcion;
+        private System.Windows.Forms.Panel btnBitacora;
+        private System.Windows.Forms.Label lblBitacoraTitulo;
+        private System.Windows.Forms.Label lblBitacoraDescripcion;
+        private System.Windows.Forms.Panel btnBackup;
+        private System.Windows.Forms.Label lblBackupTitulo;
+        private System.Windows.Forms.Label lblBackupDescripcion;
     }
 }
-

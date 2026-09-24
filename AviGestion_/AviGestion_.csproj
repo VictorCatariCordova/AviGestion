@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,10 +49,25 @@
   <ItemGroup>
     <Compile Include="Datos\ClienteDatos.cs" />
     <Compile Include="Datos\Conexion.cs" />
+    <Compile Include="Datos\DatosBackup.cs" />
+    <Compile Include="Datos\DatosBitacora.cs" />
+    <Compile Include="Datos\DatosGestionAlerta.cs" />
     <Compile Include="Datos\DatosProducto.cs" />
     <Compile Include="Datos\DatosStock.cs" />
     <Compile Include="Datos\HistorialClienteDatos.cs" />
     <Compile Include="Datos\UsuarioDatos.cs" />
+    <Compile Include="Interfaz\FormBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FormBackup.Designer.cs">
+      <DependentUpon>FormBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FormBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FormBitacora.Designer.cs">
+      <DependentUpon>FormBitacora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\FormCargaStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +79,12 @@
     </Compile>
     <Compile Include="Interfaz\FormClientes.Designer.cs">
       <DependentUpon>FormClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FormGestionAlerta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FormGestionAlerta.Designer.cs">
+      <DependentUpon>FormGestionAlerta.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\FormHistorialCliente.cs">
       <SubType>Form</SubType>
@@ -78,6 +100,9 @@
     </Compile>
     <Compile Include="Logica\ABM_Producto.cs" />
     <Compile Include="Logica\Alerta.cs" />
+    <Compile Include="Logica\BackupLogica.cs" />
+    <Compile Include="Logica\BitacoraLogica.cs" />
+    <Compile Include="Logica\GestionAlertaLogica.cs" />
     <Compile Include="Logica\Cliente.cs" />
     <Compile Include="Logica\ClienteLogica.cs" />
     <Compile Include="Logica\HistorialClienteLogica.cs" />
@@ -111,6 +136,8 @@
     <Compile Include="Interfaz\FormUsuarios.Designer.cs">
       <DependentUpon>FormUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Seguridad\DigitoVerificador.cs" />
+    <Compile Include="Seguridad\Encriptado.cs" />
     <EmbeddedResource Include="Interfaz\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\FormClientes.resx">
       <DependentUpon>FormClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FormGestionAlerta.resx">
+      <DependentUpon>FormGestionAlerta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\FormHistorialCliente.resx">
       <DependentUpon>FormHistorialCliente.cs</DependentUpon>
